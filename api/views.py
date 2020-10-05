@@ -11,11 +11,11 @@ from .models import Task
 @api_view(['GET'])
 def apiOverview(request):
     api_urls = {
-        'List': '/taks-list/',
-        'Detail View': '/taks-detail/<str:pk>',
-        'Create View': '/taks-create/',
-        'Update View': '/taks-update/<str:pk>',
-        'Delete View': '/taks-delete/<str:pk>',
+        'List': '/task-list/',
+        'Detail View': '/task-detail/<str:pk>',
+        'Create View': '/task-create/',
+        'Update View': '/task-update/<str:pk>',
+        'Delete View': '/task-delete/<str:pk>',
     }
     return Response(api_urls)
 
